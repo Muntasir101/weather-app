@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" id="cityInput">
+            <button onclick="searchCity()">
+                <img src="https://cdn-icons-png.flaticon.com/512/3917/3917132.png" width="25">
+            </button>
+        </div>
+        <div class="content">
+            <div id="map"></div>
+            <div class="weather-info">
+                <h2 id="cityName">Weather Information</h2>
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <h3>Condition</h3>
+                        <p id="condition">--</p>
+                        <img id="conditionIcon" class="weather-icon" src="" alt="Weather Icon">
+                    </div>
+                    <div class="detail-item">
+                        <h3>Temperature</h3>
+                        <p id="temperature">--°C</p>
+                        <img class="weather-icon" src="https://cdn-icons-png.flaticon.com/128/5991/5991492.png" alt="Weather Icon">
+                    </div>
+                    <div class="detail-item">
+                        <h3>Humidity</h3>
+                        <p id="humidity">--%</p>
+                        <img class="weather-icon" src="https://cdn-icons-png.flaticon.com/128/5664/5664993.png" alt="Weather Icon">
+                    </div>
+                    <div class="detail-item">
+                        <h3>Wind Speed</h3>
+                        <p id="windSpeed">-- km/h</p>
+                        <img class="weather-icon" src="https://cdn-icons-png.flaticon.com/128/2201/2201153.png" alt="Weather Icon">
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <footer class="footer">
+        <p>Developed by <a href="https://github.com/Muntasir101" target="_blank">Muntasir</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
